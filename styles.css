@@ -1,0 +1,49 @@
+/* CSS styles */
+h1 {
+  color: #8B57DB;
+}
+
+h2 {
+  color: #CD57DB;
+}
+
+h3 {
+  color: #DB57A7;
+}
+
+.center {
+  text-align: center;
+}
+
+body {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.column img {
+  margin-top: 12px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
