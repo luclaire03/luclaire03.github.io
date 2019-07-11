@@ -1,1 +1,136 @@
-"Hello World" 
+<!DOCTYPE html>
+<html>
+ <head>
+   <!-- comments in HTML -->
+   <link rel="stylesheet" href="styles.css">
+   <script src="main.js"> </script>
+   <style>
+    * {
+      box-sizing: border-box;
+    }
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 10px;
+    }
+    .column img {
+      margin-top: 12px;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .zoom {
+      transition: transform .2s;
+    }
+
+    .zoom:hover {
+      transform: scale(1.5);
+    }
+   </style>
+   <script>
+   function showText(text){
+     document.getElementbyId("text").innerHTML=text;
+   }
+   function hide(){
+     document.getElementbyId("text").style.display="none";
+   }
+   </script>
+ </head>
+ <body>
+   <div class="center">
+     <h1> PASTRIES </h1>
+   </div>
+   I love eating them. This is a webpage about my favorite
+   pastries, and ones that I think are cool. Have fun!
+   <div>
+     <h3><em><strong> European - </strong></em></h3>
+     <p>
+     In all of Europe, France is probably most well-known for its pastries.
+     Some of them are macarons, pain au chocolat, and crepes. But there is
+     more to Europe than France. I also think cannolis, danishes, and spanakopita
+     are pretty cool.
+     </p>
+     <div class="row">
+       <div class="column">
+       </div>
+       <div class="column">
+         <img src="macaron.jpg" style="width:100%" class="zoom" alt="Macarons">
+         <img src="crepes.jpg" style="width:100%" class="zoom" alt="Crepes">
+         <img src="danish.jfif" style="width:100%" class="zoom" alt="Danishes">
+       </div>
+       <div class="column">
+         <img src="pain.jfif" style="width:100%" class="zoom" alt="Pain Au Chocolat">
+         <img src="Cannoli.jpg" style="width:100%" class="zoom" alt="Cannoli">
+         <img src="spanakopita.jfif" style="width:100%" class="zoom" alt="Spanakopitas">
+       </div>
+       <div class="column">
+       </div>
+     </div>
+     <h3><em><strong> Asian - </strong></em></h3>
+     <p>
+     I know a lot of pastries from just growing up in a Chinese household.
+     My favorite by far are cong you bing, or scallion pancakes. Mooncakes
+     are amazing, too. Though not from mainland China, feng li su (pineapple cakes)
+     is great. Some other interesting ones are Japanese taiyaki, curry puffs, and jalebi.
+     </p>
+     <div class="row">
+       <div class="column">
+       </div>
+       <div class="column">
+         <img src="congyoubing.jpeg" style="width:100%" class="zoom"
+         alt="Scallion Pancakes">
+         <img src="mooncake.jpg" style="width:100%" class="zoom" alt="Mooncakes">
+         <img src="fenglisu.jpg" style="width:100%" class="zoom"
+         alt="Pineapple Cakes">
+       </div>
+       <div class="column">
+         <img src="taiyaki.jpg" style="width:100%" class="zoom" alt="Taiyaki">
+         <img src="currypuff.jpg" style="width:100%" class="zoom" alt="Curry Puff">
+         <img src="jalebi.jpg" style="width:100%" class="zoom" alt="Jalebi">
+       </div>
+       <div class="column">
+       </div>
+     </div>
+     <h3><em><strong> American - </strong></em></h3>
+     <p>
+     It's commonly said that American food is just a mix of other
+     cuisines, but there are some pastries that have become important
+     parts of American cuisine. For example the pies (apple, pumpkin, and pecan).
+     Although I am not a fan, bear claws do exist too. I guess donuts
+     count as well, although the cronut <em> was </em> created in New York.
+     </p>
+     <div class="row">
+       <div class="column">
+       </div>
+       <div class="column">
+         <img src="applepie.jpg" style="width:100%" class="zoom" alt="Apple Pie">
+         <img src="donuts.png" style="width:100%" class="zoom" alt="Donuts">
+         <img src="pecanpie.jpg" style="width:100%" class="zoom" alt="Pecan Pie">
+       </div>
+       <div class="column">
+         <img src="bearclaw.jpg" style="width:100%" class="zoom" alt="Bear Claw">
+         <img src="pumpkinpie.jpeg" style="width:100%" class="zoom" alt="Pumpkin Pie">
+         <img src="cronut.jpg" style="width:100%" class="zoom" alt="Cronut">
+       </div>
+       <div class="column">
+       </div>
+     </div>
+   </div>
+
+   <div>
+     <h2> Featured Recipes: </h2>
+     <p> <a href="https://www.chinasichuanfood.com/scallion-pancakes/" target="_blank">
+         Chinese Scallion Pancakes </a> </p>
+     <p> <a href="https://www.tasteofhome.com/recipes/apple-pie/" target="_blank">
+         American Apple Pie </a> </p>
+     <p> <a href="https://www.thespruceeats.com/easy-pain-au-chocolat-recipe-1374869"
+       target="_blank">French Pain Au Chocolat </a> </p>
+       <img src="image.png">
+   </div>
+
+ </body>
+</html>
