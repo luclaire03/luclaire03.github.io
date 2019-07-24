@@ -6,4 +6,4 @@ Summer 2019
 
 -----
 
-first HTML website (ever)
+my first ever HTML website
